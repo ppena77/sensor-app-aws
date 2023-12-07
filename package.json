@@ -1,0 +1,14 @@
+{
+  "name": "sensor-app",
+  "version": "1.0.0",
+  "description": "aplicación que mandará los datos del sensor al serviddor correspondiente",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Pedro Benjamin Peña Snow",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.0"
+  }
+}

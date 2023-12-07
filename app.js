@@ -27,7 +27,7 @@ const getDate = () => {
 
 // 5 min interval = 900000
 
-const dataInterval = 5000; // Ponemos el intervalo en una varible, por si queremos cambiarlo (milisegundos)
+const dataInterval = 900000; // Ponemos el intervalo en una varible, por si queremos cambiarlo (milisegundos)
 
 const getAndSendData = () => {
     try {

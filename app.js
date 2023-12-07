@@ -27,7 +27,7 @@ const getDate = () => {
 
 // 5 min interval = 900000
 
-const dataInterval = 900000; // Ponemos el intervalo en una varible, por si queremos cambiarlo (milisegundos)
+const dataInterval = 10000; // Ponemos el intervalo en una varible, por si queremos cambiarlo (milisegundos)
 
 const getAndSendData = () => {
     setInterval(() => {
@@ -38,7 +38,7 @@ const getAndSendData = () => {
             temperatura: temp,
             fecha: dataDate
         }; // Guardamos los datos en el objeto data
-        axios.post('http://127.0.0.1:3666/temp/reg', data) // Pasamos los datos al servidor. Axios se encarga de especificar el tipo de contenido (Json) sin necesidad de declararlo. A su vez, pasamos la URL absoluta, por una cuestión de preferencia. Como solo hay una ruta ahora mismo, no consideramos necesario declarar la ruta raiz en axios y después llamar a post con rutas relativas.
+        axios.post('http:/18.232.131.143:3666/temp/reg', data) // Pasamos los datos al servidor. Axios se encarga de especificar el tipo de contenido (Json) sin necesidad de declararlo. A su vez, pasamos la URL absoluta, por una cuestión de preferencia. Como solo hay una ruta ahora mismo, no consideramos necesario declarar la ruta raiz en axios y después llamar a post con rutas relativas.
     }, dataInterval);
 };
 

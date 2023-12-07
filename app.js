@@ -25,9 +25,9 @@ const getDate = () => {
 
 // Función que genera los datos deseados cada 15 minutos y los manda al servidor
 
-// 5 min interval = 900000
+// 5 min interval = 300000
 
-const dataInterval = 900000; // Ponemos el intervalo en una varible, por si queremos cambiarlo (milisegundos)
+const dataInterval = 300000; // Ponemos el intervalo en una varible, por si queremos cambiarlo (milisegundos)
 
 const getAndSendData = () => {
     try {
